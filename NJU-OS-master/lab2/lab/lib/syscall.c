@@ -81,7 +81,7 @@ int printf(const char *format,...) {
 	char *string=0;
 	char character=0;
 	while(format[i]!=0) {
-        // TODO: support more format %s %d %x and so on
+        // : support more format %s %d %x and so on
         	buffer[count++]=format[i];
 		if(format[i]=='%') {
 			count--; i++;
@@ -219,7 +219,7 @@ int str2Hex(int *hex, char *buffer, int size, int *count);
 int str2Str2(char *string, int avail, char *buffer, int size, int *count);
 
 int scanf(const char *format,...) {
-	// TODO: implement scanf function, return the number of input parameters
+	// : implement scanf function, return the number of input parameters
 	va_list ap;
 	va_start(ap, format);
 	int i=0; // format index
